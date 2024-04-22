@@ -1,0 +1,184 @@
+<!-- /snippets/product-quantity.liquid -->
+
+<div
+  class="product__block__quantity"
+  style="--PB: {{ block.settings.padding_bottom }}px;"
+  {{ block.shopify_attributes }}>
+  {%- if block.settings.show_quantity -%}
+    {%- assign quantity_options = '' -%}
+
+    {% for collection in product.collections %}
+      {%- if collection.handle == 'quantity-breaks-small' -%}
+        {%- assign quantity_options = '10,25,50,100,250,500,1000' -%}
+      {%- elsif collection.handle == 'quantity-breaks-big' -%}
+        {%- assign quantity_options = '10,25,50,100,250,500,1000' -%}
+      {%- endif -%}
+    {% endfor %}
+
+    {% assign kabinenware = false %}
+    {% assign verkaufsware = false %}
+
+    {% assign productCollections = product.collections | map: 'handle' %}
+    {% if productCollections contains 'kabinenware' %}
+      {% assign kabinenware = true %}
+    {% endif %}
+    {% if product.tags contains 'Kabinenware' %}
+      {% assign kabinenware = true %}
+    {% endif %}
+    {% if productCollections contains 'verkaufsware' %}
+      {% assign verkaufsware = true %}
+    {% endif %}
+    {% if product.tags contains 'Verkaufsware' %}
+      {% assign verkaufsware = true %}
+    {% endif %}
+
+    {% if customer.tags contains 'old-customer' %}
+      {%- if verkaufsware -%}
+        <div
+          class="a quantity__wrapper"
+          data-quantity-selector
+          data-qty-breaks="[{{ quantity_options }}]">
+          <select class="custom-quantity">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option
+              value="50"
+              selected>
+              50
+            </option>
+            <option value="100">100</option>
+            <option value="250">250</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+          </select>
+        </div>
+      {%- elsif kabinenware -%}
+        <div
+          class="a quantity__wrapper"
+          data-quantity-selector
+          data-qty-breaks="[{{ quantity_options }}]">
+          <select class="custom-quantity">
+            <option value="10">10</option>
+            <option
+              value="25"
+              selected>
+              25
+            </option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+      {%- else -%}
+        <div
+          class="b quantity__wrapper"
+          data-quantity-selector>
+          <button
+            class="quantity__button quantity__button--minus"
+            data-decrease-quantity
+            type="button">
+            &minus;
+          </button>
+          <input
+            id="quantity-input"
+            data-quantity-input
+            aria-label="{{ 'cart.label.quantity' | t }}"
+            class="quantity__input hidden"
+            type="number"
+            min="1"
+            name="quantity"
+            form="{{ uniq_id }}"
+            value="1">
+          <button
+            class="quantity__button quantity__button--plus"
+            data-increase-quantity
+            type="button">
+            +
+          </button>
+        </div>
+      {%- endif -%}
+    {% else %}
+      {%- if verkaufsware -%}
+        <div
+          class="a quantity__wrapper"
+          data-quantity-selector
+          data-qty-breaks="[{{ quantity_options }}]">
+          <select class="custom-quantity">
+            <option value="25">25</option>
+            <option
+              value="50"
+              selected>
+              50
+            </option>
+            <option value="100">100</option>
+            <option value="250">250</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+          </select>
+        </div>
+      {%- elsif kabinenware -%}
+        <div
+          class="a quantity__wrapper"
+          data-quantity-selector
+          data-qty-breaks="[{{ quantity_options }}]">
+          <select class="custom-quantity">
+            <option value="10">10</option>
+            <option
+              value="25"
+              selected>
+              25
+            </option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+      {%- else -%}
+        <div
+          class="b quantity__wrapper"
+          data-quantity-selector>
+          <button
+            class="quantity__button quantity__button--minus"
+            data-decrease-quantity
+            type="button">
+            &minus;
+          </button>
+          <input
+            id="quantity-input"
+            data-quantity-input
+            aria-label="{{ 'cart.label.quantity' | t }}"
+            class="quantity__input hidden"
+            type="number"
+            min="1"
+            name="quantity"
+            form="{{ uniq_id }}"
+            value="1">
+          <button
+            class="quantity__button quantity__button--plus"
+            data-increase-quantity
+            type="button">
+            +
+          </button>
+        </div>
+      {%- endif -%}
+    {% endif %}
+  {%- endif -%}
+</div>
+
+<style>
+  .product__block__quantity {
+    display: block !important;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var selectElement = document.querySelector('.custom-quantity').value;
+    document.querySelector('#custom-quantity').value = selectElement;
+  });
+
+  document
+    .querySelector('.custom-quantity')
+    .addEventListener('change', function () {
+      console.log(this.value, 'here2');
+      document.querySelector('#custom-quantity').value = this.value;
+    });
+</script>

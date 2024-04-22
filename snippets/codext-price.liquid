@@ -1,0 +1,57 @@
+{% comment %}
+  This Snippet will do the following things:
+  - Hide Prices for Guests
+  - Show Product Prices that have the same Tags as the Customer (for example: Erstbestellung, Nach Erstbestellung)
+{% endcomment %}
+
+{% assign customer_tags = customer.tags | join: ',' | downcase %}
+
+{% if customer %}
+  {% if price == blank %}
+    {% assign price = product.price %}
+  {% endif %}
+
+  {% assign show_price = false %}
+  {% for tag in product.tags %}
+    {% for customer_tag in customer.tags %}
+      {% if customer_tag == tag %}
+        {% assign show_price = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {% if customer_tags contains 'all' %}
+    {% assign show_price = true %}
+  {% endif %}
+
+  {% if customer_tags contains 'not confirmed' %}
+    {% assign show_price = false %}
+  {% endif %}
+
+  {% if show_price %}
+    <div class="price-display">{{ price | money }}</div>
+  {% else %}
+    <div>Ihr Account ist noch nicht genehmigt.</div>
+  {% else %}
+    <div>Bitte bestellen Sie ein Einstiegs-Set</div>
+  {% endif %}
+
+{% else %}
+  <a href="/pages/b2b" class="bg-black !text-white px-4 py-2 rounded-full normal-case">Jetzt B2B Konto erstellen</a>
+{% endif %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var productSections = document.querySelectorAll('.product-section');
+    productSections.forEach(function(section) {
+      var priceDisplay = section.querySelector('.price-display');
+      if (!priceDisplay || priceDisplay.innerText.trim() === '') {
+        var elementsToHide = section.querySelectorAll('.product__inner .product-description__content, .product__inner .product__block__quantity, .product__inner .product__block__icon, .product__inner .footer__payment-icons');
+        elementsToHide.forEach(function(element) {
+          element.style.display = 'none';
+        });
+      }
+    });
+  });
+</script>

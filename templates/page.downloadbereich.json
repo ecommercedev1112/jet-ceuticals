@@ -1,0 +1,258 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": true,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_richtext_B7Mj6d": {
+      "type": "section-richtext",
+      "blocks": {
+        "kicker_UUjeFN": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "Downloadbereich",
+            "enable_line": true,
+            "text_size": 4
+          }
+        },
+        "text_Ji48mt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "kicker_UUjeFN",
+        "text_Ji48mt"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 550,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_columns_pjgcQa": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_VmVCnU": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Open_1c9c190c-5d44-4faa-8968-5616494c152c.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "JETZT DOWNLOADEN",
+            "button_link": "https://cdn.shopify.com/s/files/1/0842/5157/4554/files/Open_1c9c190c-5d44-4faa-8968-5616494c152c.jpg?v=1707603810",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "text_block_7m3qBm": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/2024-02-16_10.41.50-min.jpg",
+            "title": "Feature images or videos",
+            "text": "",
+            "button_label": "JETZT DOWNLOADEN",
+            "button_link": "https://cdn.shopify.com/s/files/1/0842/5157/4554/files/2024-02-16_10.41.50-min.jpg?v=1708076552",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "text_block_DKGQDe": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/2024-02-16_10.40.03-min.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "JETZT DOWNLOADEN",
+            "button_link": "https://cdn.shopify.com/s/files/1/0842/5157/4554/files/2024-02-16_10.40.03-min.jpg?v=1708076437",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "text_block_MLcgPt": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Made_in_Germany.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "JETZT DOWNLOADEN",
+            "button_link": "https://cdn.shopify.com/s/files/1/0842/5157/4554/files/Made_in_Germany.jpg?v=1707603667",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "text_block_c3zFrL": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Hoechste_Vertraeglichkeit.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "JETZT DOWNLOADEN",
+            "button_link": "https://cdn.shopify.com/s/files/1/0842/5157/4554/files/Hoechste_Vertraeglichkeit.jpg?v=1707603667",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "text_block_4Xebck": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Durchdachte_Innovation.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "JETZT DOWNLOADEN",
+            "button_link": "https://cdn.shopify.com/s/files/1/0842/5157/4554/files/Durchdachte_Innovation.jpg?v=1707603666",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "text_block_QhPdgp": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Clean_Beauty_98b0d82f-23c0-4584-a720-445d4df1bc46.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "Jetzt Downloaden",
+            "button_link": "https://cdn.shopify.com/s/files/1/0842/5157/4554/files/Clean_Beauty.jpg?v=1707603668",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "text_block_tATdRb": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Wir_schaffen_Hauterfolg.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "JETZT DOWNLOADEN",
+            "button_link": "https://cdn.shopify.com/s/files/1/0842/5157/4554/files/Wir_schaffen_Hauterfolg.jpg?v=1707603668",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "text_block_YjkcB8": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Our_Identity.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "JETZT DOWNLOADEN",
+            "button_link": "https://cdn.shopify.com/s/files/1/0842/5157/4554/files/Our_Identity.jpg?v=1707603667",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "text_block_C3RRfj": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Wo_andere_Marken_aufhoeren.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "JETZT DOWNLOADEN",
+            "button_link": "https://cdn.shopify.com/s/files/1/0842/5157/4554/files/Wo_andere_Marken_aufhoeren.jpg?v=1707603667",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "text_block_rftxw3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Skin_Optimizer_Concentrate_Vitamin_C_Ferula.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "JETZT DOWNLOADEN",
+            "button_link": "https://cdn.shopify.com/s/files/1/0842/5157/4554/files/Skin_Optimizer_Concentrate_Ceramide_Panthenol3.jpg?v=1707603662",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_VmVCnU",
+        "text_block_7m3qBm",
+        "text_block_DKGQDe",
+        "text_block_MLcgPt",
+        "text_block_c3zFrL",
+        "text_block_4Xebck",
+        "text_block_QhPdgp",
+        "text_block_tATdRb",
+        "text_block_YjkcB8",
+        "text_block_C3RRfj",
+        "text_block_rftxw3"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "align_text": "text-center",
+        "scale_image": true,
+        "wh_ratio": 1,
+        "grid_large": 3,
+        "grid_medium": 3,
+        "grid_mobile": 1.9,
+        "progress_bar_mobile": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_richtext_B7Mj6d",
+    "section_columns_pjgcQa"
+  ]
+}

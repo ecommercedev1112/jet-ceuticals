@@ -1,0 +1,291 @@
+{
+  "sections": {
+    "hero": {
+      "type": "section-hero",
+      "blocks": {
+        "banner-kicker": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "",
+            "enable_line": false,
+            "text_size": 3
+          }
+        },
+        "banner-heading": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "text_size": 11
+          }
+        },
+        "banner-text": {
+          "type": "text",
+          "settings": {
+            "richtext": "",
+            "text_size": 6
+          }
+        }
+      },
+      "block_order": [
+        "banner-kicker",
+        "banner-heading",
+        "banner-text"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/20231214_Eyecatcher_Image_Skindentity_2500X800-scaled-1_e55d2cf6-6a10-4e0a-b49f-071daa827d48.jpg",
+        "mobile_image": "shopify://shop_images/20231214_Eyecatcher_Image_Skindentity_2500X800-scaled-1_c55edcf6-2345-41c7-a8b4-1bf4c4095d80.jpg",
+        "height": "use_image",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": true,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 2,
+        "padding_bottom": 0
+      }
+    },
+    "section_richtext_cPD9gY": {
+      "type": "section-richtext",
+      "blocks": {
+        "kicker_TgLNb3": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "UNSERE PHILOSOPHIE",
+            "enable_line": true,
+            "text_size": 4
+          }
+        },
+        "text_bxaHiB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Die Qualität unserer Produkte ist der der Grundstein für den Erfolg unserer Kunden. Für uns ist ein Produkt nur so gut wie der Inhalt. Und das erlaubt aus unserer Sicht keine Kompromisse. Unsere Produkte sind dermatologisch getestet und gewährleisten die beste Produktsicherheit. Endkunden soll das Produkt kaufen und nicht jede Woche zur Behandlung kommen. Unsere Philosophie setzt auf die Heimpflege.</p>",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        },
+        "button_Cqmcpe": {
+          "type": "button",
+          "settings": {
+            "link_text_1": "MEHR ERFAHREN",
+            "link_1": "",
+            "button_size_1": "btn--small",
+            "button_style_1": "btn",
+            "button_color_1": "btn--black",
+            "link_text_2": "Learn more",
+            "link_2": "",
+            "button_size_2": "btn--long",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--white",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "kicker_TgLNb3",
+        "text_bxaHiB",
+        "button_Cqmcpe"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_list_collections_products_tR8bqz": {
+      "type": "section-list-collections-products",
+      "blocks": {
+        "collection_CqQqnN": {
+          "type": "collection",
+          "settings": {
+            "collection": "alle-produkte",
+            "title": "VERKAUFSWAREN",
+            "link_text": "",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3
+          }
+        },
+        "collection_eAYbYa": {
+          "type": "collection",
+          "settings": {
+            "collection": "alle-produkte-kabinenware",
+            "title": "KABINENWARE",
+            "link_text": "",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "collection_CqQqnN",
+        "collection_eAYbYa"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "grid": 4,
+        "rows": 1,
+        "enable_scroll_mobile": true,
+        "grid_small": 1.2,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_collection_PCdXe7": {
+      "type": "section-collection",
+      "settings": {
+        "title": "UNSERE BESTSELLER",
+        "hide_without_sample_product_tag": false,
+        "collection": "hydra-power",
+        "grid": 4,
+        "rows": 1,
+        "grid_mobile": "2",
+        "bg": "palette--light bg--neutral",
+        "show_view_all": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4fafd2fd-3803-4478-8d6e-0c8b205b1e89": {
+      "type": "section-collection",
+      "settings": {
+        "title": "VON UNSEREN KUNDEN EMPFOHLEN",
+        "hide_without_sample_product_tag": false,
+        "collection": "aha-peelings-kabi",
+        "grid": 4,
+        "rows": 1,
+        "grid_mobile": "2",
+        "bg": "palette--light bg--neutral",
+        "show_view_all": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_columns_mDjGHw": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_KtmEQR": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Design_ohne_Titel_5_1.png",
+            "title": "HYDRAPOWER",
+            "text": "<p>Hochdosierte und super verträgliche Cocktails für Ihre Aquabrasions und Hydra-Geräte.</p>",
+            "button_label": "MEHR INFO",
+            "button_link": "https://www.jet-ceuticals.de/wirkstoffe-2/#hydrapower",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "text_block_7XhHA8": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Design_ohne_Titel_6_1.png",
+            "title": "JETPOWER",
+            "text": "<p>COSMECEUTICALS für Jet Geräte, sauber, hochdosiert und sparsam.</p>",
+            "button_label": "MEHR INFO",
+            "button_link": "https://www.jet-ceuticals.de/wirkstoffe-2/#jetpower",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "text_block_Cfcy8y": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Design_ohne_Titel_8_1_d21f9317-d3a4-4088-82f8-714337c0fe80.png",
+            "title": "SKINREPEN BY JETCEUTICALS",
+            "text": "<p>Needling ohne Risstrauma</p><p></p><p></p>",
+            "button_label": "MEHR INFO",
+            "button_link": "https://www.jet-ceuticals.de/needling/",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_KtmEQR",
+        "text_block_7XhHA8",
+        "text_block_Cfcy8y"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "GERÄTE & WIRKSTOFFE",
+        "bg": "palette--light bg--neutral",
+        "align_text": "text-center",
+        "scale_image": false,
+        "wh_ratio": 1,
+        "grid_large": 3,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "progress_bar_mobile": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_blog_GdJihr": {
+      "type": "section-blog",
+      "disabled": true,
+      "settings": {
+        "title": "LATEST BLOGPOSTS",
+        "homepage_blog": "news",
+        "homepage_blog_count": 6,
+        "progress_bar": "mobile",
+        "grid_large": 3,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "wh_ratio": 1.7,
+        "show_author": false,
+        "show_tags": true,
+        "show_date": true,
+        "show_preview": false,
+        "show_link": false,
+        "bg": "palette--light bg--accent",
+        "color": "text--white",
+        "show_view_all": false,
+        "button_style": "btn-text-thick-line",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "section_richtext_cPD9gY",
+    "section_list_collections_products_tR8bqz",
+    "section_collection_PCdXe7",
+    "4fafd2fd-3803-4478-8d6e-0c8b205b1e89",
+    "section_columns_mDjGHw",
+    "section_blog_GdJihr"
+  ]
+}

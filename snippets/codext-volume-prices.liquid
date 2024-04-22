@@ -1,0 +1,185 @@
+{% comment %} Quantity rules {% endcomment %}
+
+<div
+  id="QuantityRules-{{ section.id }}"
+  data-product-url="{{ product.url }}"
+  data-section-id="{{ section.id }}"
+  data-variant-id="{{ product.selected_or_first_available_variant.id }}">
+  {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1
+  -%}
+    <div>
+      {{-
+        'Produkte können nur in Vielfachen von '
+        | append: product.selected_or_first_available_variant.quantity_rule.increment
+        | append: ' bestellt werden.'
+      -}}
+    </div>
+  {%- endif -%}
+  {%- if product.selected_or_first_available_variant.quantity_rule.min > 1 -%}
+    <div>
+      {{-
+        'Die Mindestbestellmenge beträgt '
+        | append: product.selected_or_first_available_variant.quantity_rule.min
+        | append: '.'
+      -}}
+    </div>
+  {%- endif -%}
+  {%- if product.selected_or_first_available_variant.quantity_rule.max != null
+  -%}
+    <div>
+      {{-
+        'Die Höchstbestellmenge beträgt '
+        | append: product.selected_or_first_available_variant.quantity_rule.max
+        | append: '.'
+      -}}
+    </div>
+  {%- endif -%}
+</div>
+
+<script>
+  function initializeAllVariantData() {
+  const variants = [];
+  {% for variant in product.variants %}
+     variants.push({
+      id: {{ variant.id }},
+      title: {{ variant.title | json }},
+      price: {{ variant.price | money_with_currency | json }},
+      quantity_price_breaks: []
+    });
+
+    {% for price_break in variant.quantity_price_breaks %}
+      variants[{{ forloop.parentloop.index0 }}].quantity_price_breaks.push({
+        minimum_quantity: {{ price_break.minimum_quantity }},
+        price: {{ price_break.price | money_with_currency | json }}
+      });
+      {% endfor %}
+  {% endfor %}
+
+  return variants;
+  }
+
+  const allVariants = initializeAllVariantData();
+
+
+  function setupVariantChangeListener() {
+    document.addEventListener("change", () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const variantIdQuery = urlParams.get('variant');
+
+      if (variantIdQuery) {
+        updateVolumePricing(variantIdQuery);
+        window.variantId = variantIdQuery;
+
+        let newQtySelector = document.querySelector('select[data-quantity-input]');
+        if (!newQtySelector) {
+          newQtySelector = document.querySelector('input[data-quantity-input]');
+        }
+        const selectOptionSelector = document.querySelector('.custom-quantity');
+        if (selectOptionSelector) {
+          newQtySelector = selectOptionSelector;
+        }
+        if(newQtySelector){
+          doCalculation(newQtySelector.value)
+        }
+      }
+    })
+  }
+
+  function updateVolumePricing(variantId) {
+    const variant = allVariants.find((variant) => variant.id == variantId);
+    if (variant) {
+      const volumePricingList = document.getElementById('volume-pricing-list');
+      volumePricingList.innerHTML = '';
+      variant.quantity_price_breaks.forEach((priceBreak, index) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${priceBreak.minimum_quantity}+ Preis je Einheit: ${priceBreak.price}`;
+        volumePricingList.appendChild(listItem);
+      });
+    }
+  }
+
+  setupVariantChangeListener();
+  updateVolumePricing();
+</script>
+
+{%- if product.quantity_price_breaks_configured? -%}
+  <div class="volume-pricing-note">
+    <span>{{ 'Hinweis zu Mengenrabatten' }}</span>
+  </div>
+  <volume-pricing
+    class="parent-display"
+    id="Volume-{{ section.id }}">
+    {%- if product.selected_or_first_available_variant.quantity_price_breaks.size
+        > 0
+    -%}
+      <span class="caption-large">{{ 'Mengenrabatte' }}</span>
+      <ul
+        class="list-unstyled no-js-hidden"
+        id="volume-pricing-list">
+        {%- for price_break in product.selected_or_first_available_variant.quantity_price_breaks -%}
+          {%- assign price_break_price = price_break.price
+            | money_with_currency
+          -%}
+          <li>
+            <span>
+              {{- price_break.minimum_quantity -}}
+              <span aria-hidden="true">+</span></span
+            >
+            <span>{{ 'Preis je Einheit: ' | append: price_break_price }}</span>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </volume-pricing>
+{%- endif -%}
+
+<script>
+  function doCalculation(amount) {
+    const atcBtnPrice = document.querySelector('[custom-data-button-price]');
+    const unitPriceElement = document.querySelector(
+      '.product__price__main[data-price-wrapper]'
+    );
+    let unitPrice = parseFloat(
+      unitPriceElement.textContent.replace('€', '').replace(',', '.')
+    );
+    const selectedValue = parseInt(amount, 10);
+    const volumePricingList = initializeAllVariantData();
+
+    let totalPrice = unitPrice;
+    volumePricingList.forEach(variant => {
+      if (variant.id == window.variantId) {
+        variant.quantity_price_breaks.forEach(breakPoint => {
+          if (selectedValue >= breakPoint.minimum_quantity) {
+            totalPrice = parseFloat(
+              breakPoint.price.replace('€', '').replace(',', '.')
+            );
+          }
+        });
+      }
+    });
+
+    atcBtnPrice.innerText =
+      (totalPrice * selectedValue).toFixed(2).replace('.', ',') + '€';
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    window.variantId = '{{ product.selected_or_first_available_variant.id }}';
+    console.log('variantId', window.variantId);
+    let newQtySelector = document.querySelector('select[data-quantity-input]');
+    if (!newQtySelector) {
+      newQtySelector = document.querySelector('input[data-quantity-input]');
+    }
+    const selectOptionSelector = document.querySelector('.custom-quantity');
+    if (selectOptionSelector) {
+      newQtySelector = selectOptionSelector;
+    }
+    console.log('newQtySelector', newQtySelector);
+
+    if (newQtySelector) {
+      newQtySelector.addEventListener('change', function (event) {
+        console.log('change', event.target.value);
+        doCalculation(event.target.value);
+      });
+    }
+    doCalculation('50');
+  });
+</script>

@@ -1,0 +1,174 @@
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "liquid_LaPpqg": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"article_number\">\nArtikelnummer:&nbsp;{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> {{ current_variant.sku }}</span>\n</div>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": 6,
+            "product_show_cutline": true,
+            "show_rating": true,
+            "show_rating_count": false,
+            "padding_bottom": 20
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": 5,
+            "padding_bottom": 40
+          }
+        },
+        "quantity_Ec7zTi": {
+          "type": "quantity",
+          "settings": {
+            "show_quantity": true,
+            "padding_bottom": 20
+          }
+        },
+        "variant_selectors_KtpgEJ": {
+          "type": "variant-selectors",
+          "settings": {
+            "option_space": 30,
+            "padding_bottom": 30
+          }
+        },
+        "buttons": {
+          "type": "add-buttons",
+          "settings": {
+            "enable_payment_button": false,
+            "enable_gift_card_recipient": false,
+            "padding_bottom": 20
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "title": "Buy it with",
+            "upsell_type": "product_single",
+            "product": "",
+            "upsell_product_list": [],
+            "upsell_list_limit": 1,
+            "padding_bottom": 20
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "disabled": true,
+          "settings": {
+            "padding_bottom": 20
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share",
+            "target_device": "",
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "liquid_LaPpqg",
+        "title",
+        "price",
+        "quantity_Ec7zTi",
+        "variant_selectors_KtpgEJ",
+        "buttons",
+        "upsell",
+        "pickup",
+        "sharing"
+      ],
+      "custom_css": [
+        ".label-content {font-family: var(--FONT-STACK-ACCENT); font-style: var(--FONT-STYLE-ACCENT); font-weight: var(--FONT-WEIGHT-ACCENT); font-weight: var(--FONT-WEIGHT-ACCENT-BOLD); text-transform: var(--FONT-ACCENT-TRANSFORM); letter-spacing: var(--FONT-ACCENT-LETTER-SPACING); font-size: calc(var(--font-3) * var(--FONT-ADJUST-ACCENT)); line-height: var(--leading-normal); opacity: 1; color: #656565; font-weight: 400;}",
+        ".gpo-app .gpo-select select {background: #fff; border: 1px solid #dadada !important;}"
+      ],
+      "settings": {
+        "layout": "thumbnails-left@slides",
+        "image_width": "half",
+        "image_spacing": 0,
+        "align": "left",
+        "bg": "palette--light bg--neutral",
+        "mobile_layout": "carousel",
+        "enable_video_looping": true,
+        "zoom_enable": true,
+        "alt_text_enable": true,
+        "alt_text_icon": "icon-ruler",
+        "product_breadcrumbs_enable": true,
+        "product_breadcrumbs_list": [],
+        "width": "wrapper",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "section_faq_QjiDYf": {
+      "type": "section-faq",
+      "blocks": {
+        "text_3k8VHY": {
+          "type": "text",
+          "settings": {
+            "title": "INCI",
+            "content": "<p>{{ product.metafields.custom.inci | metafield_tag }}</p>"
+          }
+        },
+        "text_hjBapW": {
+          "type": "text",
+          "settings": {
+            "title": "WEITERE INFORMATIONEN",
+            "content": "<p>{{ product.metafields.custom.hinweise_weitere_informationen_ | metafield_tag }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_3k8VHY",
+        "text_hjBapW"
+      ],
+      "settings": {
+        "title": "PRODUkT INFORMATIONEN",
+        "title_align": "text-center",
+        "title_size": 4,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related": {
+      "type": "related",
+      "settings": {
+        "heading": "Ähnliche Produkte",
+        "bg": "palette--light bg--neutral",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_small": 1.2,
+        "related_products_enable": true,
+        "limit": 6,
+        "product_recommendations_heading": "",
+        "show_recently_viewed": false,
+        "product_recently_limit": 6,
+        "product_recently_minimum": 4,
+        "product_recently_heading": "",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_faq_QjiDYf",
+    "related"
+  ]
+}

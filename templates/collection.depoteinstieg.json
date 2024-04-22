@@ -1,0 +1,116 @@
+{
+  "sections": {
+    "section_richtext_FPPxBU": {
+      "type": "section-richtext",
+      "blocks": {
+        "kicker_ydYMMP": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "Depoteinstieg",
+            "enable_line": true,
+            "text_size": 4
+          }
+        },
+        "text_VxCUF4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hallo, schön, dass du da bist! Um mit SKINDENTITY zu starten, kannst du unter \"Depoteinstieg\" zwischen einer 1er, 3er und 6er Sortierung zum Start mit SKINDENTITY auswählen. Nach dieser Bestellung erhältst du die zugehörigen Gutscheine und alle weiteren Produkte stehen dir zum Einkauf bereit. <br/>Viel Spaß und viele #Hauterfolge wünscht das Team von SKINDENTITY</p>",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "kicker_ydYMMP",
+        "text_VxCUF4"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hero": {
+      "type": "collection-hero",
+      "disabled": true,
+      "settings": {
+        "text_align": "align--middle-center",
+        "show_title": true,
+        "show_title_below": false,
+        "show_description": false,
+        "show_description_below": false,
+        "color_bg": "palette--light bg--neutral",
+        "show_image": true,
+        "bg_position": "center-center",
+        "image_height": "use_screen_one_third",
+        "overlay_opacity": 20,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "text_color": "text--white",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width_text": "wrapper",
+        "padding_top_text": 36,
+        "padding_bottom_text": 0
+      }
+    },
+    "subcollections": {
+      "type": "collection-sub",
+      "settings": {
+        "subcollections": [],
+        "limit": 6,
+        "color_bg": "palette--light bg--neutral",
+        "text_color": "text--white",
+        "text_align": "align--middle-center",
+        "select_image": "collection",
+        "bg_position": "center-center",
+        "wh_ratio": 1.7,
+        "overlay_opacity": 20,
+        "overlay_color": "#000000",
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "nav_links_HynzCr": {
+          "type": "nav_links",
+          "settings": {
+            "collection_linklist": ""
+          }
+        }
+      },
+      "block_order": [
+        "nav_links_HynzCr"
+      ],
+      "settings": {
+        "product_limit": 36,
+        "grid_large": 3,
+        "grid_mobile": "2",
+        "enable_layout_toggle": true,
+        "color_bg": "palette--light bg--neutral",
+        "collection_sorting": false,
+        "hide_sidebar": false,
+        "collapse_filters": false,
+        "show_products_count": true,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 64
+      }
+    }
+  },
+  "order": [
+    "section_richtext_FPPxBU",
+    "hero",
+    "subcollections",
+    "main"
+  ]
+}

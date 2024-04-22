@@ -1,0 +1,67 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text_dbcHqX": {
+          "type": "text",
+          "settings": {
+            "title": "Service",
+            "text": "<p><strong>Bei Fragen zur Webseite / Shop:</strong><br/>E-Mail: <a href=\"mailto:info@jet-ceuticals.de\" title=\"mailto:info@jet-ceuticals.de\">info@jet-ceuticals.de</a></p><p><strong>Fragen zu Lieferung, Versand sowie Reklamationen</strong><br/>Tel.: +49 8062 72690-0<br/>E-Mail: <a href=\"mailto:info@jet-ceuticals.de\">info@jet-ceuticals.de</a></p><p><strong>Bitte beachten!</strong><br/>Die Angebote in diesem Shop richten sich ausschließlich an gewerbliche Kunden (= Unternehmer gem. § 14 BGB).</p>",
+            "text_size": 4,
+            "accordion_default": ""
+          }
+        },
+        "text_3WgfpL": {
+          "type": "text",
+          "settings": {
+            "title": "Info",
+            "text": "<p><strong>JET CEUTICALS GmbH<br/></strong>Alexandra Weintritt<br/>Headquarter, Produktion und Logistik:<br/>Carl-von-Ossietzky-Str. 9 – 11<br/>83043 Bad Aibling<br/>E-Mail: <a href=\"mailto:info@jet-ceuticals.de\">info@jet-ceuticals.de</a></p>",
+            "text_size": 4,
+            "accordion_default": ""
+          }
+        },
+        "linklist_zPyx4D": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "footer",
+            "title": "Menü",
+            "accordion_default": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_dbcHqX",
+        "text_3WgfpL",
+        "linklist_zPyx4D"
+      ],
+      "settings": {
+        "menu_position": "left",
+        "footer_image": "shopify://shop_images/JET-CEUTICALS-Shop-Weiss.svg",
+        "logo_max_limit": 195,
+        "width": "wrapper--full",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "subfooter": {
+      "type": "subfooter",
+      "settings": {
+        "footer_secondary_linklist": "",
+        "footer_payment_enable": true,
+        "footer_social_enable": true,
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "subfooter"
+  ]
+}

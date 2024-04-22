@@ -1,0 +1,98 @@
+{
+  "sections": {
+    "bc2773cb-ccf0-467d-9643-e2136dcfeb43": {
+      "type": "section-hero",
+      "blocks": {
+        "template--21763337945370__bc2773cb-ccf0-467d-9643-e2136dcfeb43-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Registrierung",
+            "text_size": 10
+          }
+        },
+        "template--21763337945370__bc2773cb-ccf0-467d-9643-e2136dcfeb43-text-1": {
+          "type": "text",
+          "settings": {
+            "richtext": "<p>Bitte registrieren Sie sich auf dieser Seite als Neukunde.</p>",
+            "text_size": 6
+          }
+        }
+      },
+      "block_order": [
+        "template--21763337945370__bc2773cb-ccf0-467d-9643-e2136dcfeb43-heading-1",
+        "template--21763337945370__bc2773cb-ccf0-467d-9643-e2136dcfeb43-text-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/20231214_Eyecatcher_Image_Skindentity_2500X800-scaled-1.jpg",
+        "height": "use_image",
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 2000,
+        "text_align": "align--bottom-left",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_liquid_QRBhcz": {
+      "type": "section-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n  iframe {\n    width: 1px;\n    min-width: 100%;\n  }\n</style>\n<script src=\"https://davidjbradshaw.github.io/iframe-resizer/js/iframeResizer.min.js\"></script>\n<iframe id=\"myIframe\" src=\"https://skindentity.codext.de?store=jet\"></iframe>\n<script>\n  iFrameResize({ log: false }, '#myIframe')\n</script>"
+      }
+    },
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": true,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "170276962371f0a01a": {
+      "type": "apps",
+      "disabled": true,
+      "custom_css": [
+        ".float__wrapper label {transform: translateY(-4em); opacity: 1; z-index: 10;}",
+        ".formful__branding {display: none !important; opacity: 0;}"
+      ],
+      "settings": {
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "116b48aa-074f-4422-b251-aa68cfc6e68d": {
+      "type": "section-liquid",
+      "disabled": true,
+      "custom_css": [
+        "{background: #fff;}"
+      ],
+      "settings": {
+        "custom_liquid": "<iframe class=\"airtable-embed\" src=\"https://airtable.com/embed/app33A1n8HaGhs35v/pagakdXth7ixmEG0C/form\" frameborder=\"0\" onmousewheel=\"\" width=\"100%\" height=\"900\" style=\"background: transparent; border: 1px solid #ccc;\"></iframe>"
+      }
+    }
+  },
+  "order": [
+    "bc2773cb-ccf0-467d-9643-e2136dcfeb43",
+    "section_liquid_QRBhcz",
+    "main",
+    "170276962371f0a01a",
+    "116b48aa-074f-4422-b251-aa68cfc6e68d"
+  ]
+}

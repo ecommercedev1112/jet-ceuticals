@@ -1,0 +1,189 @@
+{
+  "sections": {
+    "hero": {
+      "type": "section-hero",
+      "blocks": {
+        "contact-block-kicker": {
+          "type": "kicker",
+          "disabled": true,
+          "settings": {
+            "kicker": "<p>Introducing</p>",
+            "enable_line": false,
+            "text_size": 3
+          }
+        },
+        "contact-block-heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Kontakt",
+            "text_size": 10
+          }
+        },
+        "2cee2aef-dcb5-4bb0-8e7d-f97e5bc5f9d2": {
+          "type": "text",
+          "settings": {
+            "richtext": "<p>Bitte haben Sie Verständnis dafür, dass wir Preislisten erst nach der<a href=\"https://shop.jet-ceuticals.de/registration/\">Registrierung </a>raus geben, da wir ausschließlich an Wiederverkäufer verkaufen.</p>",
+            "text_size": 6
+          }
+        }
+      },
+      "block_order": [
+        "contact-block-kicker",
+        "contact-block-heading",
+        "2cee2aef-dcb5-4bb0-8e7d-f97e5bc5f9d2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/20231214_Eyecatcher_Image_Skindentity_2500X800-scaled-1_c55edcf6-2345-41c7-a8b4-1bf4c4095d80.jpg",
+        "height": "use_screen_one_half",
+        "overlay_opacity": 50,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": true,
+        "content_width": 1050,
+        "text_align": "align--bottom-left",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": false,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "contact": {
+      "type": "section-contact",
+      "blocks": {
+        "905224f9-1c4b-4f6b-9642-820f9406dce4": {
+          "type": "text",
+          "settings": {
+            "title": "Nachname"
+          }
+        },
+        "c60a61ad-6cd1-472b-8b55-a4f0e489d73d": {
+          "type": "text",
+          "settings": {
+            "title": "Bestellnummer - bitte angeben -"
+          }
+        },
+        "text_9JiLwW": {
+          "type": "text",
+          "settings": {
+            "title": "Firma"
+          }
+        },
+        "email": {
+          "type": "email",
+          "settings": {
+            "title": "Email-Adresse"
+          }
+        },
+        "text_UeppMb": {
+          "type": "text",
+          "settings": {
+            "title": "Telefonnummer für Rückfragen"
+          }
+        },
+        "text_nnFPWW": {
+          "type": "text",
+          "settings": {
+            "title": "Homepage"
+          }
+        },
+        "select_UmmmXk": {
+          "type": "select",
+          "settings": {
+            "title": "Beruf",
+            "label_one": "Dermalogische Praxis",
+            "label_two": "Heilpraktikerin",
+            "label_three": "KosmetikerIn",
+            "label_four": "ShopbetreiberIn",
+            "label_five": "sonstiger",
+            "label_six": ""
+          }
+        },
+        "text_dwjdwU": {
+          "type": "text",
+          "settings": {
+            "title": "Sonstiger Beruf"
+          }
+        },
+        "select_fhaEGg": {
+          "type": "select",
+          "settings": {
+            "title": "Interesse",
+            "label_one": "Private Label",
+            "label_two": "Ich suche einen neue Depotmarke",
+            "label_three": "Ich interesesiere mich für JETPOWER Wirkstoffe",
+            "label_four": "Ich interesesiere mich für HYDRAPOWER Wirkstoffe",
+            "label_five": "Ich habe Interesse am Vertrieb der JET CEUTICALS Produkte (Vertriebspartner)",
+            "label_six": "sonstiges"
+          }
+        },
+        "message": {
+          "type": "body",
+          "settings": {
+            "title": "Ihre Nachricht\nBitte so konkret wie möglich angeben, dass wir Ihnen gezielt weiterhelfen können."
+          }
+        },
+        "e0c36464-2856-4d64-b8da-7072c6674049": {
+          "type": "checkbox",
+          "settings": {
+            "title": "Ich habe die Datenschutzerklärung gelesen und erkläre mich damit einverstanden, dass die von mir im Kontaktformular eingegebenen Daten elektronisch erhoben und gespeichert werden. Die Daten werden nur zur Bearbeitung meiner Anfrage verwendet. Eine Weitergabe an Dritte findet nicht statt."
+          }
+        }
+      },
+      "block_order": [
+        "905224f9-1c4b-4f6b-9642-820f9406dce4",
+        "c60a61ad-6cd1-472b-8b55-a4f0e489d73d",
+        "text_9JiLwW",
+        "email",
+        "text_UeppMb",
+        "text_nnFPWW",
+        "select_UmmmXk",
+        "text_dwjdwU",
+        "select_fhaEGg",
+        "message",
+        "e0c36464-2856-4d64-b8da-7072c6674049"
+      ],
+      "settings": {
+        "title": "Kontaktformular",
+        "align_text": "text-left",
+        "button_size": "btn--long",
+        "button_color": "btn--neutral",
+        "button_style": "btn",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 42,
+        "padding_bottom": 36
+      }
+    },
+    "section_liquid_yWXayF": {
+      "type": "section-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"123formbuilder\" fid=\"6593200\"></div>"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "main",
+    "contact",
+    "section_liquid_yWXayF"
+  ]
+}
